@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark">
+  <title>Agrimensura y Topografía Isaza | Levantamientos, Curvas de Nivel, Replanteos</title>
+  <meta name="description" content="Servicios profesionales de agrimensura y topografía en Panamá: levantamientos planialtimétricos, curvas de nivel, replanteo, control de obra, GNSS, dron y GIS." />
+  <link rel="canonical" href="https://isaza-example.com/" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agrimensura y Topografía Isaza">
+  <meta property="og:description" content="Precisión topográfica para obras civiles y catastro en Panamá.">
+  <meta property="og:url" content="https://isaza-example.com/">
+  <meta property="og:image" content="https://isaza-example.com/logo_isaza.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Agrimensura y Topografía Isaza">
+  <meta name="twitter:description" content="Levantamientos, curvas de nivel, replanteos, GIS.">
+  <meta name="twitter:image" content="https://isaza-example.com/logo_isaza.png">
+  <script>tailwind={config:{darkMode:'class'}}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
+    .glass-dark { backdrop-filter: blur(8px); background: rgba(15,23,42,0.6); }
+  </style>
+  <script>
+    const THEME_KEY='theme'; const root=document.documentElement;
+    const stored=localStorage.getItem(THEME_KEY);
+    if(stored==='dark'||(!stored&&window.matchMedia('(prefers-color-scheme: dark)').matches)){root.classList.add('dark');}
+    function toggleTheme(){root.classList.toggle('dark');localStorage.setItem(THEME_KEY,root.classList.contains('dark')?'dark':'light');const i=document.getElementById('darkIcon');if(i)i.textContent=root.classList.contains('dark')?'☀️':'🌙';}
+    document.addEventListener('DOMContentLoaded',()=>{const i=document.getElementById('darkIcon');if(i)i.textContent=root.classList.contains('dark')?'☀️':'🌙';});
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100">
+  <header class="sticky top-0 z-40 border-b border-slate-200 dark:border-slate-700">
+    <div class="glass dark:glass-dark">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <img src="logo_isaza.png" alt="Logo Agrimensura y Topografía Isaza" class="h-10 w-auto rounded-md shadow" />
+          <div class="font-semibold leading-tight">
+            <div class="text-slate-900 dark:text-white">Agrimensura y Topografía Isaza</div>
+            <div class="text-xs text-slate-500">Aviso de operación 8-317-391-2021-574258384</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-3 text-sm">
+          <a href="#servicios" class="px-2 py-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">Servicios</a>
+          <a href="#proyectos" class="px-2 py-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">Proyectos</a>
+          <a href="#contacto" class="px-2 py-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">Contacto</a>
+          <a href="#cotiza" class="px-4 py-2 rounded-xl bg-emerald-600 text-white shadow hover:bg-emerald-700">Cotización</a>
+          <button onclick="toggleTheme()" class="px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" title="Modo oscuro / claro">
+            <span id="darkIcon" aria-hidden="true">🌙</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-4 py-14">
+      <div class="flex flex-col justify-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">Precisión topográfica para obras civiles y catastro</h1>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">Levantamientos planialtimétricos, curvas de nivel, replanteos, control de obra, GNSS, dron y GIS. Atención en toda Panamá.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#cotiza" class="px-5 py-3 rounded-xl bg-emerald-600 text-white shadow hover:bg-emerald-700">Cotiza tu proyecto</a>
+          <a href="#servicios" class="px-5 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow hover:bg-slate-50 dark:hover:bg-slate-700">Ver servicios</a>
+        </div>
+        <div class="mt-4 text-sm text-slate-500 dark:text-slate-400">Tel: <span class="font-semibold text-slate-700 dark:text-slate-200">507-6370-8512</span> · Email: <a class="underline" href="mailto:a.topo.isaza@gmail.com">a.topo.isaza@gmail.com</a></div>
+      </div>
+      <div class="md:pt-6">
+        <div class="bg-white dark:bg-slate-800 rounded-3xl shadow-lg p-6 border border-slate-100 dark:border-slate-700">
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-700/50"><div class="text-2xl font-bold">GNSS</div><div class="text-xs text-slate-500 dark:text-slate-300">RTK / PPK</div></div>
+            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-700/50"><div class="text-2xl font-bold">Dron</div><div class="text-xs text-slate-500 dark:text-slate-300">Fotogrametría</div></div>
+            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-700/50"><div class="text-2xl font-bold">SIG</div><div class="text-xs text-slate-500 dark:text-slate-300">GIS / CAD</div></div>
+          </div>
+          <div class="mt-6 rounded-2xl bg-gradient-to-r from-emerald-600 to-emerald-700 text-white p-5">
+            <p class="text-sm">¿Necesitas un plano para permisos, diseño o avalúo?</p>
+            <p class="text-lg font-semibold">Entregamos planos y archivos DXF/SHP listos para tu ingeniero o municipio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="py-16 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Servicios</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">Soluciones integrales para proyectos civiles, ambientales y catastrales.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"><h3 class="font-semibold text-slate-900 dark:text-white">Levantamiento planialtimétrico</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Curvas de nivel, perfiles, MDT/DEM y planos topográficos con precisión.</p></div>
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"><h3 class="font-semibold text-slate-900 dark:text-white">Replanteo y control de obra</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Ejes, cotas, as-built, volumetrías y supervisión topográfica en campo.</p></div>
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"><h3 class="font-semibold text-slate-900 dark:text-white">Catastro y deslindes</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Límites, amojonamientos, coordinación UTM/CRT, informes y coordenadas.</p></div>
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"><h3 class="font-semibold text-slate-900 dark:text-white">GNSS y georreferenciación</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">RTK/PPK, redes de apoyo, transformación de sistemas y ajustes.</p></div>
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"><h3 class="font-semibold text-slate-900 dark:text-white">Fotogrametría con dron</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Ortomosaicos, nubes de puntos, modelos 3D y cubicaciones.</p></div>
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"><h3 class="font-semibold text-slate-900 dark:text-white">GIS / CAD</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">DXF, SHP, GeoJSON, KML y cartografía impresa.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="py-16 bg-slate-50 dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Por qué elegirnos</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"><p class="text-sm text-slate-500 dark:text-slate-300">Precisión</p><p class="mt-2 font-semibold">Instrumentación total, GNSS y fotogrametría con control.</p></div>
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"><p class="text-sm text-slate-500 dark:text-slate-300">Entrega</p><p class="mt-2 font-semibold">Planos, memorias y archivos digitales listos para tramitar.</p></div>
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800"><p class="text-sm text-slate-500 dark:text-slate-300">Soporte</p><p class="mt-2 font-semibold">Acompañamiento técnico en diseño, obra y trámites.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cotiza" class="py-16 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Solicita una cotización</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Cuéntanos del proyecto y te responderemos pronto.</p>
+        <form class="mt-6 grid grid-cols-1 gap-4" onsubmit="event.preventDefault(); window.location.href = 'mailto:a.topo.isaza@gmail.com?subject=Cotización%20Topografía&body=' + encodeURIComponent(document.getElementById('msg').value);">
+          <input class="px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 dark:bg-slate-800" type="text" placeholder="Nombre y empresa" required>
+          <input class="px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 dark:bg-slate-800" type="email" placeholder="Correo" required>
+          <textarea id="msg" class="px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 dark:bg-slate-800 min-h-[120px]" placeholder="Descripción del terreno/obra, ubicación, tiempo estimado, etc."></textarea>
+          <div class="flex flex-wrap gap-3">
+            <button class="px-5 py-3 rounded-xl bg-emerald-600 text-white shadow hover:bg-emerald-700" type="submit">Enviar por correo</button>
+            <a class="px-5 py-3 rounded-xl bg-green-600 text-white shadow hover:bg-green-700" href="https://wa.me/50763708512" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </form>
+      </div>
+      <div id="contacto" class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-6 border border-slate-200 dark:border-slate-700">
+        <h3 class="font-semibold text-slate-900 dark:text-white">Contacto</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><span class="text-slate-500 dark:text-slate-300">Teléfono:</span> <a class="font-semibold underline" href="tel:+50763708512">507-6370-8512</a></li>
+          <li><span class="text-slate-500 dark:text-slate-300">Email:</span> <a class="underline" href="mailto:a.topo.isaza@gmail.com">a.topo.isaza@gmail.com</a></li>
+          <li><span class="text-slate-500 dark:text-slate-300">Ubicación:</span> Panamá</li>
+          <li><span class="text-slate-500 dark:text-slate-300">Horario:</span> Lun–Sáb 8:00–18:00</li>
+        </ul>
+        <p class="mt-4 text-xs text-slate-500 dark:text-slate-300">R.U.C.: 8-317-391-2021-574258384</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 text-sm flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
+      <p class="text-slate-500 dark:text-slate-400">© <span id="year"></span> Agrimensura y Topografía Isaza. Todos los derechos reservados.</p>
+      <p class="text-slate-400 dark:text-slate-500">Hecho con precisión topográfica 🧭</p>
+    </div>
+  </footer>
+
+  <button onclick="toggleTheme()" class="fixed md:hidden bottom-4 right-4 px-4 py-3 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow">
+    <span id="darkIcon" aria-hidden="true">🌙</span>
+  </button>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
